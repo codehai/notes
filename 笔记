@@ -1,0 +1,4 @@
+user→root用户切换
+sudo su
+root→user用户切换
+su user
