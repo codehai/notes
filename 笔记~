@@ -31,5 +31,3 @@ $ sudo /etc/init.d/apache2 restart
 # /etc/init.d/apache2 stop
 or
 $ sudo /etc/init.d/apache2 stop
-
-tree命令　显示当前目录树形结构，
