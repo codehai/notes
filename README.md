@@ -1,5 +1,4 @@
 # notes
-
 ------
 
 ## Nginx
@@ -31,7 +30,8 @@ sudo /etc/init.d/apache2 restart
 * 停止apache服务:
 sudo /etc/init.d/apache2 stop
 
-### CSS
+## CSS
+
 * CSS foote 置于页面底部
 https://codepen.io/cbracco/pen/zekgx
 
@@ -46,7 +46,7 @@ json.loads("\"" + nick+ "\"")
 print '<p><a class="p" target="_blank" href="http://www.duitang.com/people/1629580/">'+json.loads("\"" + nick+ "\"")+'</a></p></li></ul></div></div>'
 ```
 * js方法:
-```javascripty
+```javascript
 function uToc(u){
 	var nick = JSON.parse("\"" + u+ "\"");
 	return nick;
