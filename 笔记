@@ -1,3 +1,10 @@
+从容停止Nginx：
+kill -QUIT 主进程号
+快速停止Nginx：
+kill -TERM 主进程号
+强制停止Nginx：
+pkill -9 nginx
+
 user→root用户切换
 sudo su
 root→user用户切换
@@ -29,7 +36,30 @@ or
 $ sudo /etc/init.d/apache2 restart
 三、Stop Apache 2 Server /停止apache服务
 # /etc/init.d/apache2 stop
-or
 $ sudo /etc/init.d/apache2 stop
+or
 
 tree命令　显示当前目录树形结构，
+
+
+前面不带u的unicode编码转中文python方法：
+nick =  data['author_dat']['nick']
+json.loads("\"" + nick+ "\"")
+print '<p><a class="p" target="_blank" href="http://www.duitang.com/people/1629580/">'+json.loads("\"" + nick+ "\"")+'</a></p></li></ul></div></div>'
+js方法:
+function uToc(u){
+	var nick = JSON.parse("\"" + u+ "\"");
+	return nick;       
+}
+
+htop 看cpu占用
+
+判断图片有没有加载完成
+
+document.getElementsByTagName("img")[0].complete
+
+
+css footer置于底部
+
+https://codepen.io/cbracco/pen/zekgx
+

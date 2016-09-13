@@ -1,0 +1,29 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
+
+# 第三方 SMTP 服务
+mail_host="smtp.163.com" 
+mail_user="szzxsh"   
+mail_pass="yuping"  
+
+
+sender = 'szzxsh@163.com'
+receivers = '77686805@qq.com'
+body = '<h1>Hi</h1><p>今天天气很好啊,我们一起出去玩怎么样，我知道这是一个不错的想法，你觉得呢．</p><p>我是土生土长的长沙妹子。最近被肖奈聊到不行啊我跟一广电高管的儿子是一个团队的。这次好不容易弄到了看快本的机会。我还可以带一个人一起去看，一个人还是孤单了一点毕竟要录制那么久，有没有人愿意跟我一起的求组队啊</p>' 
+
+message = MIMEText(body, 'html')
+message['From'] = "77686805@qq.com"
+message['To'] =  "szzxsh@qq.com"
+message['Subject'] = '31号快本我来啦！想带个妹子一起去'
+
+
+
+smtpObj = smtplib.SMTP() 
+smtpObj.connect(mail_host, 25)    # 25 为 SMTP 端口号
+smtpObj.login(mail_user,mail_pass)  
+smtpObj.sendmail(sender, receivers, message.as_string())
+
