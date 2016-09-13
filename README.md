@@ -35,6 +35,37 @@ sudo /etc/init.d/apache2 stop
 * CSS foote 置于页面底部
 https://codepen.io/cbracco/pen/zekgx
 
+* 图片居中
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .pics-container {
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .pics-container img {
+            height: 100px;
+            max-width: none;
+            margin: 0 -100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="pics-container">
+        <!-- 这里有个问题，如果图片是等高宽的话，会等比缩小，看不出hidden的效果 -->
+        <img src="1.jpg">
+    </div>
+</body>
+</html>
+```
+
 ## 杂项
 
 ### 编码转换
