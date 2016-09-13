@@ -8,8 +8,8 @@
 * 快速停止Nginx：kill -TERM 主进程号
 * 强制停止Nginx：pkill -9 nginx
 
-### Linux相关命令
-## 用户切换
+## Linux相关命令
+### 用户切换
 * user→root用户切换:sudo su
 * root→user用户切换:su user
 
