@@ -11,6 +11,9 @@
 ### 用户切换
 * user→root用户切换:sudo su
 * root→user用户切换:su user
+### 文件查找
+* 根据文件内容
+grep -nr 'foo' * 
 
 ## apache2
 

@@ -11,6 +11,9 @@
 ### 用户切换
 * user→root用户切换:sudo su
 * root→user用户切换:su user
+### 文件查找
+* 根据文件内容
+grep -nr 'target' * 
 
 ## apache2
 
@@ -32,7 +35,7 @@ sudo /etc/init.d/apache2 stop
 
 ## CSS
 
-* CSS foote 置于页面底部
+* CSS footer 置于页面底部
 https://codepen.io/cbracco/pen/zekgx
 
 * 图片居中
