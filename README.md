@@ -2,7 +2,7 @@
 
 * Nginx
 
-* 从容停止Nginx：
+从容停止Nginx：
 kill -QUIT 主进程号
 快速停止Nginx：
 kill -TERM 主进程号
