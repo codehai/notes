@@ -32,7 +32,7 @@ sudo /etc/init.d/apache2 stop
 
 ## CSS
 
-* CSS foote 置于页面底部
+* CSS footer 置于页面底部
 https://codepen.io/cbracco/pen/zekgx
 
 * 图片居中
