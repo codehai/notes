@@ -70,7 +70,35 @@ https://codepen.io/cbracco/pen/zekgx
 </body>
 </html>
 ```
+## SQL
 
+### set the default search_path at the database level
+```sql
+ALTER DATABASE <database_name> SET search_path TO schema1,schema2;
+```
+### create view from other tables
+```sql
+CREATE VIEW cities_and_countries_cached AS
+ SELECT DISTINCT activities.cityname,
+    activities.countryname
+   FROM activities
+UNION
+ SELECT DISTINCT attractions.cityname,
+    attractions.countryname
+   FROM attractions
+UNION
+ SELECT DISTINCT hotels.cityname,
+    hotels.countryname
+   FROM hotels
+UNION
+ SELECT DISTINCT restaurants.cityname,
+    restaurants.countryname
+   FROM restaurants
+UNION
+ SELECT DISTINCT shops.cityname,
+    shops.countryname
+   FROM shops;
+```
 ## 杂项
 
 ### 编码转换
